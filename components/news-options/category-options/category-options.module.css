@@ -1,0 +1,10 @@
+.categoriesButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.categoriesButtons button {
+  padding: 1rem;
+}

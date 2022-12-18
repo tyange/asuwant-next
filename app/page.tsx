@@ -1,9 +1,7 @@
+import NewsOptions from "../components/news-options/news-options";
+
 const MainPage = () => {
-  return (
-    <div>
-      <p>asuwant page</p>
-    </div>
-  );
+  return <NewsOptions />;
 };
 
 export default MainPage;

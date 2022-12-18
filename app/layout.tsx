@@ -1,4 +1,5 @@
 import Header from "../components/ui/header/header";
+import Main from "../components/ui/main/main";
 import "./global.css";
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -6,7 +7,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <head />
       <body>
         <Header />
-        {children}
+        <Main>{children}</Main>
       </body>
     </html>
   );
