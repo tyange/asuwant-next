@@ -7,6 +7,7 @@ const NewsOptions = () => {
   return (
     <div className={styles.newsOptions}>
       <CountryOptions />
+      <div className={styles.divider}></div>
       <CategoryOptions />
     </div>
   );
