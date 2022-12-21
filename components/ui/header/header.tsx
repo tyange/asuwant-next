@@ -2,14 +2,14 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header>
-      <nav>
+    <header className="p-5 font-serif">
+      <nav className="flex gap-5 items-center">
         <div>
           <Link href="/">
-            <span>asuwant</span>
+            <span className="text-xl">asuwant</span>
           </Link>
         </div>
-        <div>
+        <div className="flex flex-1 justify-between items-center">
           <div>
             <ul>
               <li>credits</li>
