@@ -1,17 +1,15 @@
 import Link from "next/link";
 
-import styles from "./header.module.css";
-
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <div className={styles.homeLink}>
+    <header>
+      <nav>
+        <div>
           <Link href="/">
             <span>asuwant</span>
           </Link>
         </div>
-        <div className={styles.menus}>
+        <div>
           <div>
             <ul>
               <li>credits</li>

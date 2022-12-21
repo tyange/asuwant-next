@@ -1,12 +1,14 @@
-import styles from "./country-options.module.css";
-
 import { countries } from "../../../constants/countries";
+import { getFlagEmoji } from "../../../utils/getFlagEmoji";
 
 const CountryOptions = () => {
   return (
-    <div className={styles.countriesButtons}>
+    <div>
       {countries.map((country) => (
-        <button key={country.code}>{country["kor-name"]}</button>
+        <button key={country.code}>
+          <span>{getFlagEmoji(country.code)}</span>
+          <span>{country["kor-name"]}</span>
+        </button>
       ))}
     </div>
   );
