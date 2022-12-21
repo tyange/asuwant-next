@@ -1,14 +1,11 @@
 import { countries } from "../../../constants/countries";
-import { getFlagEmoji } from "../../../utils/getFlagEmoji";
+import CountryOption from "./country-option/country-option";
 
 const CountryOptions = () => {
   return (
-    <div>
+    <div className="grid grid-cols-5 px-52 py-10 gap-7">
       {countries.map((country) => (
-        <button key={country.code}>
-          <span>{getFlagEmoji(country.code)}</span>
-          <span>{country["kor-name"]}</span>
-        </button>
+        <CountryOption key={country.code} country={country} />
       ))}
     </div>
   );
