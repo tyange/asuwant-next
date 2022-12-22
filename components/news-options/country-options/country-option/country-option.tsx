@@ -6,7 +6,7 @@ type CountryOptionProps = {
 };
 const CountryOption = ({ country }: CountryOptionProps) => {
   return (
-    <button className="w-fit shadow-md border self-center justify-self-center px-5 py-2 flex flex-col items-center rounded-xl">
+    <button className="w-40 h-16 shadow-md border self-center justify-self-center px-5 py-2 flex flex-col items-center rounded-xl">
       <span>{getFlagEmoji(country.code)}</span>
       <span>{country["kor-name"]}</span>
     </button>
