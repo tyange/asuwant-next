@@ -1,9 +1,10 @@
 import { categories } from "../../../constants/category";
+import CategoryOption from "./category-option/category-option";
 const CategoryOptions = () => {
   return (
-    <div>
+    <div className="flex justify-center items-center gap-5 p-10">
       {categories.map((category) => (
-        <button key={category.name}>{category["kor-name"]}</button>
+        <CategoryOption key={category.name} category={category} />
       ))}
     </div>
   );
